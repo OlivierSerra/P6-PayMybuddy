@@ -8,5 +8,11 @@ import com.openclassroom.PayMyBuddy.Model.Destinataire;
 
 @Repository
 public interface DestinataireRepository extends JpaRepository<Destinataire, Integer>{
-    
+
+    Destinataire saveDestinataire(int iD);
+
+    Destinataire deleteDestinataire(int iD);
+
+    Destinataire updatedestinataire(int iD);
+
 }

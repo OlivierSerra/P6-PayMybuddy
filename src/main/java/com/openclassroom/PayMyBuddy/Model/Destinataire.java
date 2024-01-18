@@ -10,7 +10,9 @@ import jakarta.persistence.Table;
 @Entity
 @Table (name ="Destinataire")
 public class Destinataire {
-     //n'existe pas dans la table destinataire - a rajouter
+     public static Destinataire destinataire;
+
+    //n'existe pas dans la table destinataire - a rajouter
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
