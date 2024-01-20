@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import com.openclassroom.PayMyBuddy.Model.Emetteurs;
 import com.openclassroom.PayMyBuddy.Repository.EmetteursRepository;
 
-import jakarta.persistence.Id;
+//import jakarta.persistence.Id;
 
 @Service
 public class EmetteursService {
@@ -36,4 +36,8 @@ public class EmetteursService {
         return emetteursRepository.updateEmetteurs(ID);   
     }
 
+    // Avoir tous les virements émis par un émetteur
+    public Iterable <Emetteurs> getEmetteursByVirementConnexion (int ID) {
+        return emetteursRepository.findByVirementAndConnexion( ID);
+    }
 }

@@ -18,7 +18,7 @@ public class Virement {
     private int virement_ID;
     
     @Column(name ="connexion")
-    private String connexion;
+    private int connexion;
     
     @Column(name ="description")
     private String description;
@@ -34,11 +34,11 @@ public class Virement {
         this.virement_ID = virement_ID;
     }
 
-    public String getConnexion() {
+    public int getConnexion() {
         return this.connexion;
     }
 
-    public void setConnexion(String connexion) {
+    public void setConnexion(int connexion) {
         this.connexion = connexion;
     }
 

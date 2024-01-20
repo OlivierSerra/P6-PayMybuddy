@@ -9,7 +9,7 @@ import jakarta.persistence.Table;
 
 @Entity
 @Table(name ="ListOfConnections")
-public class ListOfConnections {
+public class ListOfConnexions {
     
     @Id
     @GeneratedValue (strategy = GenerationType.IDENTITY)
